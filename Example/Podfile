@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'DLCustomActivity', :exclusive => true do
+  pod "DLCustomActivity", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "DLCustomActivity", :path => "../"
+
+  
+end

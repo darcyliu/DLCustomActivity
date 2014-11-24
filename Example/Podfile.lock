@@ -1,0 +1,14 @@
+PODS:
+  - DLCustomActivity (0.1.0)
+
+DEPENDENCIES:
+  - DLCustomActivity (from `../`)
+
+EXTERNAL SOURCES:
+  DLCustomActivity:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DLCustomActivity: 62381340180cca7f1bb9f255a62877e0af774794
+
+COCOAPODS: 0.34.4

@@ -1,0 +1,11 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+language: objective-c
+before_install: cd Example && pod install && cd -
+install:
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+script:
+- set -o pipefail 
+- xctool -workspace Example/DLCustomActivity.xcworkspace -scheme DLCustomActivity -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO build test
